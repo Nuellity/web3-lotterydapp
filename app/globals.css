@@ -2,26 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.stats {
+  @apply bg-[#091F1C] p-3 text-white flex-1 rounded-md border-[#004337] border;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.stats-container {
+  @apply bg-[#091F1C] p-2 rounded-lg border-[#004337] border;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.countdown {
+  @apply p-5 text-4xl text-center text-white rounded-lg bg-[#013F34] lg:min-w-[150px];
+}
+.countdown-label {
+  @apply text-center text-white uppercase text-sm pt-4;
+}
+
+.buy-btn {
+  @apply mt-5 w-full bg-gradient-to-br from-orange-500 to-emerald-600 px-10 py-5 rounded-md text-white shadow-xl disabled:from-gray-600 disabled:to-gray-100 disabled:cursor-not-allowed !important;
+}
+
+.win-btn {
+  @apply text-white w-full rounded-[0.75rem] text-center block bg-gradient-to-b from-[#FFA500] to-[#008000] shadow-md p-4 animate-pulse !important;
+}
+
+.admin-btn {
+  @apply bg-[#091F1C] block p-2 text-white flex-1 rounded-[0.25rem] border-[2px] border-solid border-[#004337] hover:text-white hover:bg-emerald-500/50 !important;
 }
