@@ -4,6 +4,7 @@ import React from "react";
 import NavButton from "./NavButton";
 import { Bars3BottomRightIcon } from "@heroicons/react/24/solid";
 import { useAddress, useDisconnect } from "@thirdweb-dev/react";
+import Image from "next/image";
 
 function Header() {
   const address = useAddress();
@@ -11,11 +12,13 @@ function Header() {
 
   return (
     <header className="grid grid-cols-2 md:grid-cols-5 justify-between items-center p-4">
-      <div className="flex items-center space-x-2">
-        <img
-          className="rounded-full h-10 w-10"
-          src="https://images.pexels.com/photos/8830899/pexels-photo-8830899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          alt=""
+      <div className="flex items-center  space-x-2">
+        <Image
+          src="https://img.icons8.com/fluency/96/money-bag-bitcoin.png"
+          alt="logo"
+          className="w-10 h-10 rounded-full "
+          width={10}
+          height={10}
         />
 
         <div>

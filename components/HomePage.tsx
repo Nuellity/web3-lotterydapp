@@ -121,7 +121,7 @@ function HomePage() {
         </div>
       )}
       {/* new draw */}
-      <div className="relative z-0 space-y-5 md:space-y-0 m-5 md:flex md:flex-row items-start justify-center md:space-x-5">
+      <div className="relative z-0 space-y-5 md:space-y-0 m-5 md:flex md:flex-row items-start justify-center md:space-x-5 mb-[85px]">
         <div className="stats-container">
           <h1 className="text-4xl text-white font-semibold text-center capitalize">
             the next draw
