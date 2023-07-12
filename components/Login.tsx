@@ -36,6 +36,10 @@ function Login() {
           Login with MetaMask
         </button>
       </div>
+      <p className="text-white mt-4">
+        <span className="font-bold">NOTE: </span>Install the Metamask extension
+        on your browser for you to login.
+      </p>
     </div>
   );
 }
